@@ -3,7 +3,7 @@
 - 🌱 I’m currently learning React via Coursera
 - 💞️ I’m looking to collaborate on anything!
 - 📫 treyhulse3@gmail.com
-- ⚡ Fun fact: No idea what I am doing
+- ⚡ Fun fact: I have no idea what I am doing
 
 <!---
 treyhulse/treyhulse is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
