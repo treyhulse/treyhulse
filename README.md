@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @treyhulse
 - 👀 I’m interested in app development and data analytics
-- 🌱 I’m currently learning React via Coursera
+- 🌱 I’m currently learning Django Web Frameworks
 - 💞️ I’m looking to collaborate on anything!
 - 📫 treyhulse3@gmail.com
 - ⚡ Fun fact: I have no idea what I am doing
