@@ -1,9 +1,10 @@
 'use client'
 
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Github, Linkedin, Mail } from "lucide-react"
+import Image from "next/image"
 
 const projects = [
   {
@@ -42,7 +43,7 @@ const projects = [
 const skills = [
   "JavaScript", "TypeScript", "React", "Next.js", "Node.js", "Python",
   "SQL/NoSQL", "User Auth and Permissions", "RESTful APIs", "Dashboarding", "Caching", "Version Control",
-  "Agile Methodologies", "Business Process Modeling", "Data Analysis"
+  "Agile Methodologies", "Business Process Modeling", "Data Analysis", "ERP Architecture", "NetSuite Oracle"
 ]
 
 export default function Page() {
@@ -114,7 +115,7 @@ export default function Page() {
           <Card className="max-w-md mx-auto">
             <CardHeader>
               <CardTitle>Contact Me</CardTitle>
-              <CardDescription>I'm always open to new opportunities and collaborations.</CardDescription>
+              <CardDescription>I&apos;m always open to new opportunities and collaborations.</CardDescription>
             </CardHeader>
             <CardContent>
               <form className="space-y-4">
