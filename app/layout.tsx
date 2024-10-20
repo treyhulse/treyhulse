@@ -1,6 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import { MainNav } from '@/components/main-nav'
+import { Toaster } from "@/components/ui/toaster"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -32,6 +33,7 @@ export default function RootLayout({
             © {new Date().getFullYear()} Trey Hulse. All rights reserved.
           </div>
         </footer>
+        <Toaster />
       </body>
     </html>
   )
