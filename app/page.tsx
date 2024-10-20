@@ -16,7 +16,7 @@ const projects = [
     title: "E-commerce Platform",
     description: "Developed a full-stack e-commerce solution using Next.js and Node.js",
     type: "Active Site",
-    link: "https://example-ecommerce.com",
+    link: "https://kc-store-fixtures.com",
     tags: ["Next.js", "Node.js", "MongoDB"],
     image: ecommercePlatformImage
   },
