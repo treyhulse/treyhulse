@@ -1,9 +1,11 @@
 'use client'
 
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Github, Linkedin, Mail } from "lucide-react"
+import Image from "next/image"
+import Link from 'next/link'
 
 const projects = [
   {
@@ -22,7 +24,7 @@ const projects = [
   {
     title: "Sales Process Optimization",
     description: "Streamlined the sales process, resulting in a 30% increase in efficiency",
-    type: "Business Process",
+    type: "Business Process Use Cases",
     tags: ["Process Mapping", "Automation"]
   },
   {
@@ -42,7 +44,7 @@ const projects = [
 const skills = [
   "JavaScript", "TypeScript", "React", "Next.js", "Node.js", "Python",
   "SQL/NoSQL", "User Auth and Permissions", "RESTful APIs", "Dashboarding", "Caching", "Version Control",
-  "Agile Methodologies", "Business Process Modeling", "Data Analysis", "ERP Architecture", "NetSuite Oracle"
+  "Agile Methodologies", "Business Process Modeling", "Data Analysis"
 ]
 
 export default function Page() {
@@ -95,6 +97,31 @@ export default function Page() {
                     </Button>
                   </CardFooter>
                 )}
+              </Card>
+            ))}
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-3xl font-semibold mb-8 text-center">Core Competencies</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { title: "Digital Transformation", href: "/digital-transformation", description: "Driving business growth through technological innovation" },
+              { title: "Data & Analytics", href: "/data-analytics", description: "Transforming data into actionable insights" },
+              { title: "Enterprise Architecture", href: "/enterprise-architecture", description: "Building scalable and integrated IT ecosystems" },
+              { title: "UI/UX Design", href: "/ui-ux", description: "Crafting intuitive and engaging user experiences" },
+              { title: "IT Governance & Strategy", href: "/it-governance", description: "Aligning IT with business objectives and managing risks" }
+            ].map((competency, index) => (
+              <Card key={index} className="flex flex-col">
+                <CardHeader>
+                  <CardTitle>{competency.title}</CardTitle>
+                  <CardDescription>{competency.description}</CardDescription>
+                </CardHeader>
+                <CardContent className="flex-grow flex items-end">
+                  <Link href={competency.href} passHref>
+                    <Button variant="outline" className="w-full">Learn More</Button>
+                  </Link>
+                </CardContent>
               </Card>
             ))}
           </div>
