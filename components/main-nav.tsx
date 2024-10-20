@@ -12,7 +12,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
-import { Home, Briefcase, FileText, Mail, Code, Brain, Wrench, ChartNoAxesCombined, Component, Sun, Building2 } from "lucide-react"
+import { Home, Briefcase, FileText, Mail, Code, Brain, Wrench, ChartNoAxesCombined, Component, Sun, Building2, SendHorizontal } from "lucide-react"
 
 const components: { title: string; href: string; description: string; icon: React.ReactNode }[] = [
   {
@@ -98,7 +98,7 @@ export function MainNav() {
         <NavigationMenuItem>
           <Link href="/contact" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              <Mail className="w-4 h-4 mr-2" />
+              <SendHorizontal className="w-4 h-4 mr-2" />
               Contact
             </NavigationMenuLink>
           </Link>

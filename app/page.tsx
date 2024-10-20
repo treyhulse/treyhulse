@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter }
 import { Badge } from "@/components/ui/badge"
 import { Github, Linkedin, Mail } from "lucide-react"
 import Link from 'next/link'
+import Image from 'next/image'
 
 const projects = [
   {
@@ -10,31 +11,36 @@ const projects = [
     description: "Developed a full-stack e-commerce solution using Next.js and Node.js",
     type: "Active Site",
     link: "https://example-ecommerce.com",
-    tags: ["Next.js", "Node.js", "MongoDB"]
+    tags: ["Next.js", "Node.js", "MongoDB"],
+    imagePath: "/assets/Ecommerce.png"
   },
   {
     title: "Inventory Management System",
     description: "Created an internal app for efficient inventory tracking and management",
     type: "Private Internal App",
-    tags: ["React", "SVG", "Express"]
+    tags: ["React", "SVG", "Express"],
+    imagePath: "/assets/Warehouse.png"
   },
   {
     title: "Sales Process Optimization",
     description: "Streamlined the sales process, resulting in a 30% increase in efficiency",
     type: "Business Process",
-    tags: ["Process Mapping", "Automation"]
+    tags: ["Process Mapping", "Automation"],
+    imagePath: "/assets/Warehouse.png"
   },
   {
     title: "Real-time Data Dashboard",
     description: "Built a real-time dashboard for monitoring key business metrics",
     type: "Technical Highlight",
-    tags: ["Python", "Streamlit.io", "Pandas"]
+    tags: ["Python", "Streamlit.io", "Pandas"],
+    imagePath: "/assets/TotalRevenue.png"
   },
   {
     title: "Predictive Analytics Model",
     description: "Developed a machine learning model for predicting customer churn",
     type: "Data Project",
-    tags: ["Python", "Scikit-learn", "Machine Learning"]
+    tags: ["Python", "Scikit-learn", "Machine Learning"],
+    imagePath: "/assets/Warehouse.png"
   }
 ]
 
@@ -82,6 +88,15 @@ export default function Page() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <Card key={index} className="flex flex-col">
+              <div className="relative w-full h-48">
+                <Image
+                  src={project.imagePath}
+                  alt={project.title}
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  className="rounded-t-lg"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>{project.title}</CardTitle>
                 <CardDescription>{project.type}</CardDescription>
