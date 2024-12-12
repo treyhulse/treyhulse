@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Trey Hulse's Portfolio
 
-## Getting Started
+Welcome to my portfolio! I'm Trey Hulse, a Web Developer with an MBA in Information Systems. This portfolio showcases my projects and skills, highlighting my expertise in full-stack development, data analytics, and business process optimization.
 
-First, run the development server:
+## Projects & Achievements
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### E-commerce Platform
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Description:** Developed a full-stack e-commerce solution.
+- **Technologies:** Next.js, Node.js, MongoDB
+- **Link:** [kc-store-fixtures.com](https://kc-store-fixtures.com)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Inventory Management System
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Description:** Created an internal app for efficient inventory tracking and management.
+- **Technologies:** React, Express
 
-## Learn More
+### Sales Process Optimization
 
-To learn more about Next.js, take a look at the following resources:
+- **Description:** Streamlined the sales process, resulting in a 30% increase in efficiency.
+- **Technologies:** Process Mapping, Automation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Real-time Data Dashboard
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Description:** Built a real-time dashboard for monitoring key business metrics.
+- **Technologies:** Python, Streamlit.io, Pandas
 
-## Deploy on Vercel
+### Predictive Analytics Model
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Description:** Developed a machine learning model for predicting customer churn.
+- **Technologies:** Python, Scikit-learn, Machine Learning
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Core Competencies
+
+- **UI/UX Design:** Crafting intuitive and engaging user experiences.
+- **Data & Analytics:** Transforming data into actionable insights.
+- **Enterprise Architecture:** Building scalable and integrated IT ecosystems.
+- **Digital Transformation:** Driving business growth through technological innovation.
+- **IT Governance & Strategy:** Aligning IT with business objectives and managing risks.
+
+## Skills
+
+- JavaScript
+- TypeScript
+- React
+- Next.js
+- Node.js
+- Python
+- SQL/NoSQL
+- User Authentication and Permissions
+- RESTful APIs
+- Dashboarding
+- Caching
+- Version Control
+- Agile Methodologies
+- Business Process Modeling
+- Data Analysis
+
+For more information or to get in touch, please visit [treyhulse.com](https://treyhulse.com).

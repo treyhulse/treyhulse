@@ -40,8 +40,8 @@ const components: { title: string; href: string; description: string; icon: Reac
     icon: <Brain className="w-4 h-4 mr-2" />,
   },
   {
-    title: "IT Governance & Strategy",
-    href: "/it-governance",
+    title: "IT Strategy",
+    href: "/it-strategy",
     description: "Aligning IT with business objectives and managing risks.",
     icon: <Code className="w-4 h-4 mr-2" />,
   },

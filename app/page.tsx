@@ -61,84 +61,109 @@ const coreCompetencies = [
   { title: "Data & Analytics", href: "/data-analytics", description: "Transforming data into actionable insights" },
   { title: "Enterprise Architecture", href: "/enterprise-architecture", description: "Building scalable and integrated IT ecosystems" },
   { title: "Digital Transformation", href: "/digital-transformation", description: "Driving business growth through technological innovation" },
-  { title: "IT Governance & Strategy", href: "/it-governance", description: "Aligning IT with business objectives and managing risks" }
+  { title: "IT Strategy", href: "/it-strategy", description: "Aligning IT with business objectives and managing risks" }
 ]
 
 export default function Page() {
   return (
-    <div className="space-y-16">
-      <section className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Trey Hulse</h1>
-        <h2 className="text-2xl text-muted-foreground mb-6">Web Developer & MBA in Information Systems</h2>
-        <div className="flex justify-center space-x-4">
-          <Button asChild variant="outline" size="icon">
+    <div className="max-w-6xl mx-auto px-4 py-16 space-y-24">
+      {/* Hero Section */}
+      <section className="text-center space-y-6">
+        <h1 className="text-5xl font-bold tracking-tight mb-4">Trey Hulse</h1>
+        <h2 className="text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
+          Web Developer & MBA in Information Systems
+        </h2>
+        <div className="flex justify-center gap-4">
+          <Button asChild variant="outline" size="icon" className="rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-800">
             <a href="https://github.com/treyhulse" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
-              <Github className="h-4 w-4" />
+              <Github className="h-5 w-5" />
             </a>
           </Button>
-          <Button asChild variant="outline" size="icon">
+          <Button asChild variant="outline" size="icon" className="rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-800">
             <a href="https://www.linkedin.com/in/trey-hulse-8a5968241" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
-              <Linkedin className="h-4 w-4" />
+              <Linkedin className="h-5 w-5" />
             </a>
           </Button>
-          <Button asChild variant="outline" size="icon">
+          <Button asChild variant="outline" size="icon" className="rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-800">
             <a href="mailto:treyhulse3@gmail.com" aria-label="Email Me">
-              <Mail className="h-4 w-4" />
+              <Mail className="h-5 w-5" />
             </a>
           </Button>
         </div>
       </section>
 
-      <section>
-        <h2 className="text-3xl font-semibold mb-8 text-center">Projects & Achievements</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {/* Projects Section */}
+      <section className="space-y-8">
+        <h2 className="text-3xl font-bold text-center">Featured Projects</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="flex flex-col">
-              <div className="relative w-full h-48">
+            <Card key={index} className="flex flex-col bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-400 dark:hover:border-zinc-600 transition-colors">
+              <div className="relative w-full h-48 overflow-hidden">
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
                   style={{ objectFit: 'cover' }}
-                  className="rounded-t-lg"
+                  className="rounded-t-lg transition-transform hover:scale-105"
                 />
               </div>
               <CardHeader>
-                <CardTitle>{project.title}</CardTitle>
-                <CardDescription>{project.type}</CardDescription>
+                <CardTitle className="text-xl">{project.title}</CardTitle>
+                <CardDescription className="text-zinc-600 dark:text-zinc-400">
+                  {project.type}
+                </CardDescription>
               </CardHeader>
               <CardContent className="flex-grow">
-                <p>{project.description}</p>
+                <p className="text-zinc-700 dark:text-zinc-300">{project.description}</p>
               </CardContent>
-              <CardFooter className="flex flex-wrap gap-2">
-                {project.tags.map((tag, tagIndex) => (
-                  <Badge key={tagIndex} variant="secondary">{tag}</Badge>
-                ))}
-              </CardFooter>
-              {project.link && (
-                <CardFooter>
-                  <Button asChild variant="link" className="px-0">
-                    <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
+              <CardFooter className="flex flex-col gap-4">
+                <div className="flex flex-wrap gap-2">
+                  {project.tags.map((tag, tagIndex) => (
+                    <Badge 
+                      key={tagIndex} 
+                      variant="secondary"
+                      className="bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100"
+                    >
+                      {tag}
+                    </Badge>
+                  ))}
+                </div>
+                {project.link && (
+                  <Button asChild variant="outline" className="w-full bg-zinc-900 text-white hover:bg-zinc-700 hover:text-white">
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      View Project
+                    </a>
                   </Button>
-                </CardFooter>
-              )}
+                )}
+              </CardFooter>
             </Card>
           ))}
         </div>
       </section>
 
-      <section>
-        <h2 className="text-3xl font-semibold mb-8 text-center">Core Competencies</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {/* Core Competencies Section */}
+      <section className="space-y-8">
+        <h2 className="text-3xl font-bold text-center">Core Competencies</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {coreCompetencies.map((competency, index) => (
-            <Card key={index} className="flex flex-col">
+            <Card 
+              key={index} 
+              className="flex flex-col hover:border-zinc-400 dark:hover:border-zinc-600 transition-colors"
+            >
               <CardHeader>
-                <CardTitle>{competency.title}</CardTitle>
-                <CardDescription>{competency.description}</CardDescription>
+                <CardTitle className="text-xl">{competency.title}</CardTitle>
+                <CardDescription className="text-zinc-600 dark:text-zinc-400">
+                  {competency.description}
+                </CardDescription>
               </CardHeader>
               <CardContent className="flex-grow flex items-end">
                 <Link href={competency.href} passHref>
-                  <Button variant="outline" className="w-full">Learn More</Button>
+                  <Button 
+                    variant="outline" 
+                    className="w-full hover:bg-zinc-100 dark:hover:bg-zinc-800"
+                  >
+                    Learn More
+                  </Button>
                 </Link>
               </CardContent>
             </Card>
@@ -146,11 +171,18 @@ export default function Page() {
         </div>
       </section>
 
-      <section>
-        <h2 className="text-3xl font-semibold mb-8 text-center">Skills</h2>
-        <div className="flex flex-wrap justify-center gap-2">
+      {/* Skills Section */}
+      <section className="space-y-8">
+        <h2 className="text-3xl font-bold text-center">Technical Skills</h2>
+        <div className="flex flex-wrap justify-center gap-3">
           {skills.map((skill, index) => (
-            <Badge key={index} variant="outline">{skill}</Badge>
+            <Badge 
+              key={index} 
+              variant="outline"
+              className="px-4 py-2 text-base bg-zinc-100 dark:bg-zinc-800 border-zinc-200 dark:border-zinc-700 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors"
+            >
+              {skill}
+            </Badge>
           ))}
         </div>
       </section>

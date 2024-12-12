@@ -10,18 +10,6 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        babyblue: {
-          50: '#e6f3ff',
-          100: '#cce7ff',
-          200: '#99cfff',
-          300: '#66b7ff',
-          400: '#339fff',
-          500: '#CFEB17',  // This is now lighter
-          600: '#0066cc',
-          700: '#004d99',
-          800: '#003366',
-          900: '#001a33',
-        },
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
@@ -33,34 +21,34 @@ const config: Config = {
           foreground: 'hsl(var(--popover-foreground))'
         },
         primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))'
+          DEFAULT: 'rgb(24 24 27)',
+          foreground: 'rgb(250 250 250)'
         },
         secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))'
+          DEFAULT: 'rgb(244 244 245)',
+          foreground: 'rgb(24 24 27)'
         },
         muted: {
-          DEFAULT: 'hsl(var(--muted))',
-          foreground: 'hsl(var(--muted-foreground))'
+          DEFAULT: 'rgb(228 228 231)',
+          foreground: 'rgb(113 113 122)'
         },
         accent: {
-          DEFAULT: 'hsl(var(--accent))',
-          foreground: 'hsl(var(--accent-foreground))'
+          DEFAULT: 'rgb(244 244 245)',
+          foreground: 'rgb(24 24 27)'
         },
         destructive: {
-          DEFAULT: 'hsl(var(--destructive))',
-          foreground: 'hsl(var(--destructive-foreground))'
+          DEFAULT: 'rgb(239 68 68)',
+          foreground: 'rgb(250 250 250)'
         },
-        border: 'hsl(var(--border))',
-        input: 'hsl(var(--input))',
-        ring: 'hsl(var(--ring))',
+        border: 'rgb(228 228 231)',
+        input: 'rgb(228 228 231)',
+        ring: 'rgb(161 161 170)',
         chart: {
-          '1': 'hsl(var(--chart-1))',
-          '2': 'hsl(var(--chart-2))',
-          '3': 'hsl(var(--chart-3))',
-          '4': 'hsl(var(--chart-4))',
-          '5': 'hsl(var(--chart-5))'
+          '1': 'rgb(24 24 27)',
+          '2': 'rgb(63 63 70)',
+          '3': 'rgb(113 113 122)',
+          '4': 'rgb(161 161 170)',
+          '5': 'rgb(212 212 216)'
         }
       },
       borderRadius: {

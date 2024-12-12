@@ -30,7 +30,7 @@ const projects = [
     title: "Real-time Data Dashboard",
     description: "Built a real-time dashboard for monitoring key business metrics",
     type: "Technical Highlight",
-    tags: ["React", "Socket.io", "D3.js"],
+    tags: ["React", "Cache", "Recharts"],
     details: "Developed an interactive, real-time dashboard that visualizes critical business KPIs, enabling data-driven decision making across multiple departments."
   },
   {
